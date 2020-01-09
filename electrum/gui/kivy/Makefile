@@ -19,7 +19,7 @@ prepare:
 	fi
 apk:
 	@make prepare
-	@-cd ../../..; buildozer android debug deploy run logcat
+	@-cd ../../..; buildozer android debug deploy run
 	@make clean
 release:
 	@make prepare
